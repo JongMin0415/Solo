@@ -44,7 +44,7 @@ public class ScoreManager : MonoBehaviour
             {
                 IncreasePlayer1Score();
             }
-            else if (Input.GetKeyDown(KeyCode.RightControl))
+            else if (Input.GetKeyDown(KeyCode.RightArrow))
             {
                 IncreasePlayer2Score();
             }
