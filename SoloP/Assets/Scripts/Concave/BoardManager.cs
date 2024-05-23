@@ -11,7 +11,7 @@ public class BoardManager : MonoBehaviour
     void Start()
     {
         cells = new GameObject[boardSize, boardSize];
-        float cellSize = 1.0f;  // 셀의 크기
+        float cellSize = 1.0f;  
         for (int x = 0; x < boardSize; x++)
         {
             for (int y = 0; y < boardSize; y++)
@@ -20,14 +20,6 @@ public class BoardManager : MonoBehaviour
                 cell.transform.SetParent(transform);
                 cells[x, y] = cell;
             }
-        }
-
-        // 카메라 조정
-        CameraAdjuster cameraAdjuster = FindObjectOfType<CameraAdjuster>();
-        if (cameraAdjuster != null)
-        {
-            cameraAdjuster.boardSize = boardSize;
-            cameraAdjuster.AdjustCamera();
         }
     }
 }

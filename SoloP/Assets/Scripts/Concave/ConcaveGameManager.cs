@@ -3,18 +3,14 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
+
 public class ConcaveGameManager : MonoBehaviour
 {
     public GameObject blackStonePrefab;
     public GameObject whiteStonePrefab;
     private bool isBlackTurn = true;
-    private BoardManager boardManager;
+    public BoardManager boardManager;
     public Text winText;
-
-    void Start()
-    {
-        boardManager = FindObjectOfType<BoardManager>();
-    }
 
     void Update()
     {
@@ -29,9 +25,9 @@ public class ConcaveGameManager : MonoBehaviour
 
                 if (CheckForWin(gridPoint))
                 {
-                    string winner = isBlackTurn ? "Black" : "White";  // winner 변수 정의
+                    string winner = isBlackTurn ? "Black" : "White";  
                     Debug.Log(winner + " wins!");
-                    ShowWinMessage(winner);  // winner 변수 전달
+                    ShowWinMessage(winner);
                 }
 
                 isBlackTurn = !isBlackTurn;

@@ -381,6 +381,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blackStonePrefab: {fileID: 132575669618490248, guid: e1069d41edccfe4458eb909bdaa5cc57, type: 3}
   whiteStonePrefab: {fileID: 8067815976299917889, guid: 02cfec2cbe313bc4e92c2f8aeffcdbdc, type: 3}
+  boardManager: {fileID: 82967206}
   winText: {fileID: 331928195}
 --- !u!4 &629232622
 Transform:
@@ -408,7 +409,6 @@ GameObject:
   - component: {fileID: 714449013}
   - component: {fileID: 714449012}
   - component: {fileID: 714449011}
-  - component: {fileID: 714449014}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -484,25 +484,12 @@ Transform:
   m_GameObject: {fileID: 714449010}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -10}
+  m_LocalPosition: {x: 5, y: 4.5, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &714449014
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 714449010}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: b3e46d207f542cc458e5cf2bfa0e903d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  boardSize: 10
 --- !u!1 &1548753636
 GameObject:
   m_ObjectHideFlags: 0
